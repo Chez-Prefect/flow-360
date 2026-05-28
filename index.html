@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flow 360 | Victoria, TX Event Rentals</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --charcoal: #1a1a1a;
+  --copper: #b87333;
+  --white: #ffffff;
+  --light-grey: #f4f4f4;
+  --display: 'Bebas Neue', sans-serif;
+  --body: 'DM Sans', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--charcoal); color: var(--white); font-family: var(--body); line-height: 1.6; }
+
+nav { display: flex; justify-content: space-between; padding: 30px 50px; align-items: center; }
+.nav-logo { font-family: var(--display); font-size: 28px; letter-spacing: 2px; color: var(--white); text-decoration: none; }
+.nav-logo span { color: var(--copper); }
+.nav-links a { color: var(--white); margin-left: 20px; text-decoration: none; font-size: 14px; text-transform: uppercase; }
+
+.hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
+.hero h1 { font-family: var(--display); font-size: clamp(50px, 12vw, 120px); line-height: 0.9; margin-bottom: 20px; }
+.hero h1 span { color: var(--copper); }
+.hero p { font-size: 20px; color: #ccc; margin-bottom: 30px; }
+.btn { padding: 15px 40px; background: var(--copper); color: var(--white); text-decoration: none; font-family: var(--display); font-size: 18px; border-radius: 2px; }
+
+.packages { padding: 80px 50px; background: var(--white); color: var(--charcoal); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+.card { border: 1px solid #ddd; padding: 40px; }
+.card h3 { font-family: var(--display); font-size: 32px; color: var(--copper); margin-bottom: 10px; }
+.card ul { list-style: none; margin: 20px 0; }
+.card li { margin-bottom: 10px; font-size: 15px; }
+
+footer { text-align: center; padding: 50px; font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">Flow <span>360</span></a>
+  <div class="nav-links">
+    <a href="#packages">Packages</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>SPIN. CROSSROADS. <br><span>CAPTURE EVERYTHING.</span></h1>
+  <p>Cinematic 360° Photo Booths for Victoria’s Best Celebrations.</p>
+  <a href="#contact" class="btn">Check Availability</a>
+</section>
+
+<section class="packages" id="packages">
+  <h2 style="font-family:var(--display); font-size:48px; text-align:center;">Choose Your Flow</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>The Standard</h3>
+      <p>Perfect for birthdays and private parties.</p>
+      <ul>
+        <li>Setup & Breakdown</li>
+        <li>RGB Ring Lighting</li>
+        <li>Custom Logo Overlay</li>
+        <li>Digital Gallery</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>The Crossroads</h3>
+      <p>Our most popular choice for weddings & quinceañeras.</p>
+      <ul>
+        <li>Everything in Standard</li>
+        <li>Dedicated On-site Attendant</li>
+        <li>Premium Branded Backdrop</li>
+        <li>Social-Sharing QR Station</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>The Lone Star</h3>
+      <p>For corporate mixers & brand activations.</p>
+      <ul>
+        <li>Everything in Crossroads</li>
+        <li>Full Brand-Kit Integration</li>
+        <li>Lead-Capture Data Form</li>
+        <li>Same-Day Highlight Reel</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Flow 360 · 360° Photo Booth Rentals · Victoria, Texas
+</footer>
+
+</body>
+</html>
