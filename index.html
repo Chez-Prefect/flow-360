@@ -3,32 +3,23 @@
 <head>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* The "Flow" Animation */
-        @keyframes gradientFlow {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        .animate-flow {
-            background: linear-gradient(-45deg, #0f172a, #1e293b, #1e3a8a, #0f172a);
-            background-size: 400% 400%;
-            animation: gradientFlow 15s ease infinite;
-        }
+        body { background-color: #050505; color: #ffffff; }
+        .hero-text { font-family: 'Arial Black', sans-serif; }
     </style>
 </head>
-<body class="animate-flow min-h-screen text-white font-sans">
+<body>
 
-    <nav class="max-w-7xl mx-auto p-8 flex justify-between items-center">
-        <div class="text-3xl font-black tracking-tighter">FLOW<span class="text-orange-500">360</span></div>
-        <button class="border border-white/20 px-6 py-2 text-xs uppercase tracking-widest hover:border-orange-500 transition">Book Now</button>
+    <nav class="flex justify-between items-center px-12 py-8">
+        <div class="text-2xl font-black italic">FLOW<span class="text-orange-500">360</span></div>
+        <div class="border border-white/20 px-6 py-2 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition cursor-pointer">Book Now</div>
     </nav>
 
-    <header class="max-w-7xl mx-auto px-8 pt-20">
-        <h1 class="text-[clamp(3rem,10vw,8rem)] font-black leading-none tracking-tighter">
-            ELEVATE <br>
-            <span class="text-white/30">THE</span> FLOW.
-        </h1>
-        <p class="mt-8 text-xl text-slate-400 max-w-lg">Victoria's premier 360° photo booth experience. Cinematic motion for weddings, galas, and brand activations across the Crossroads.</p>
+    <header class="px-12 pt-20">
+        <div class="hero-text text-[clamp(4rem,12vw,9rem)] leading-[0.8] tracking-tighter">
+            <h1 class="font-bold">ELEVATE</h1>
+            <h1 class="text-zinc-600 font-bold">THE FLOW.</h1>
+        </div>
+        <p class="mt-10 text-xl text-zinc-400 max-w-lg">Victoria's premier 360° photo booth experience. Cinematic motion for weddings, galas, and brand activations across the Crossroads.</p>
     </header>
 
 </body>
